@@ -19,6 +19,33 @@ package main
 
 import "fmt"
 
-func main() {
+func greet(name string) {
+	fmt.Println("Hello", name)
+}
 
+func message() string {
+	return "Be good to your mother"
+}
+
+func add(a, b, c int) int {
+	return a + b + c
+}
+
+func number() int {
+	return 42
+}
+
+func numbers() (int, int) {
+	return 4, 2
+}
+
+func main() {
+	name := "Matt"
+	greet(name)
+
+	fmt.Println("message", message())
+
+	a, b := numbers()
+	sum := add(a, b, number())
+	fmt.Println("sum", sum)
 }

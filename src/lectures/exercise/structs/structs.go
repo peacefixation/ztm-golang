@@ -19,6 +19,44 @@ package main
 
 import "fmt"
 
-func main() {
+type Coordinate struct {
+	x, y int
+}
 
+type Rectangle struct {
+	a Coordinate // top left
+	b Coordinate // bottom right
+}
+
+func width(r Rectangle) int {
+	return r.b.x - r.a.x
+}
+
+func length(r Rectangle) int {
+	return r.a.y - r.b.y
+}
+
+func area(r Rectangle) int {
+	return length(r) * width(r)
+}
+
+func perimiter(r Rectangle) int {
+	return (width(r) * 2) + (length(r) * 2)
+}
+
+func printInfo(r Rectangle) {
+	fmt.Println("Area", area(r))
+	fmt.Println("Perimiter", perimiter(r))
+}
+
+func main() {
+	// r := Rectangle{a: Coordinate{1, 4}, b: Coordinate{3, 2}}
+	r := Rectangle{a: Coordinate{1, 8}, b: Coordinate{6, 2}}
+
+	printInfo(r)
+
+	r.a.y *= 2
+	r.b.x *= 2
+
+	printInfo(r)
 }

@@ -45,9 +45,30 @@ func accessDenied() {
 	fmt.Println("Denied")
 }
 
+func weekday(day int) bool {
+	return day <= 4
+}
+
 func main() {
 	// The day and role. Change these to check your work.
-	today, role := Tuesday, Guest
+	today, role := Friday, Member
 
-	accessGranted()
+	//* Use the accessGranted() and accessDenied() functions to display
+	//  informational messages
+	//* Access at any time: Admin, Manager
+	//* Access weekends: Contractor
+	//* Access weekdays: Member
+	//* Access Mondays, Wednesdays, and Fridays: Guest
+
+	if role == Admin || role == Manager {
+		accessGranted()
+	} else if role == Contractor && !weekday(today) {
+		accessGranted()
+	} else if role == Member && weekday(today) {
+		accessGranted()
+	} else if role == Guest && (today == Monday || today == Wednesday || today == Friday) {
+		accessGranted()
+	} else {
+		accessDenied()
+	}
 }
