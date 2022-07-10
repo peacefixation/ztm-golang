@@ -12,9 +12,3 @@
 
 - try MSYS2
 https://developer.fyne.io/started/
-
-/5 Weedgie = Zahll, Daij
-/5 James - Shmananamam / Karria
-/5 Thunder - Tawhiri
-/5 Raid heals - Ozzy / Nick
-/5 Hots on tanks Ozzy
