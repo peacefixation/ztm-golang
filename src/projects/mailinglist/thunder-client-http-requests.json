@@ -1,0 +1,129 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Udemy Go Mailing List",
+    "dateExported": "2022-07-10T22:41:01.752Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1b7cbfeb-09f2-4d86-b29f-7344045a2662",
+            "colId": "b9ff8740-d70a-4b91-957d-ab430055164a",
+            "containerId": "",
+            "name": "GetEmail",
+            "url": "http://localhost:8080/email/get",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-07-10T12:20:44.713Z",
+            "modified": "2022-07-10T22:32:30.100Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"Email\": \"test@example.com\"}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0195326d-a73e-439e-ae56-72828f663e7d",
+            "colId": "b9ff8740-d70a-4b91-957d-ab430055164a",
+            "containerId": "",
+            "name": "CreateEmail",
+            "url": "http://localhost:8080/email/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2022-07-10T12:20:50.705Z",
+            "modified": "2022-07-10T22:34:12.908Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"Email\": \"matt@matt.com\"}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "af6b3825-5714-457f-bbcf-6085c5c9c9e9",
+            "colId": "b9ff8740-d70a-4b91-957d-ab430055164a",
+            "containerId": "",
+            "name": "UpdateEmail",
+            "url": "http://localhost:8080/email/update",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2022-07-10T12:20:58.361Z",
+            "modified": "2022-07-10T22:36:23.611Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"Email\": \"matt@matt.com\", \"ConfirmedAt\": \"2020-07-05T09:30:00+10:00\"}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b149124c-e22a-4b25-b884-458be6bd10f4",
+            "colId": "b9ff8740-d70a-4b91-957d-ab430055164a",
+            "containerId": "",
+            "name": "DeleteEmail",
+            "url": "http://localhost:8080/email/delete",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2022-07-10T12:21:03.617Z",
+            "modified": "2022-07-10T22:38:28.843Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"Email\": \"matt@matt.com\"}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e49f90d-35d0-444c-adb6-fe452776ba8f",
+            "colId": "b9ff8740-d70a-4b91-957d-ab430055164a",
+            "containerId": "",
+            "name": "GetEmailBatch",
+            "url": "http://localhost:8080/email/get_batch",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2022-07-10T12:21:14.248Z",
+            "modified": "2022-07-10T22:40:15.378Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"Count\": 50, \"Page\": 1}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
